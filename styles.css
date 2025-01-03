@@ -147,7 +147,7 @@ a.cv-link:hover, a.about-link:hover, a.notes-link:hover,a:hover  {
 
 .about-container {
   font-family: Arial, sans-serif;
-  max-width: 80%; 
+  max-width: 75%; 
   margin: 0 auto;
   line-height: 1.6;
   padding: 2rem;  
