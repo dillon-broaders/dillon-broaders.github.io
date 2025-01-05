@@ -275,7 +275,8 @@ footer a i.fab.fa-linkedin {
   }
 
   #simulation-container {
-    height: 35vh; 
+    height: 25vh; 
+    width: 80%
   }
 
   .nav-links a {
