@@ -141,7 +141,7 @@ a.cv-link:hover, a.about-link:hover, a.notes-link:hover,a:hover  {
   margin: 0;
   padding: 0;
   height: 20vh; 
-  width: 80%; 
+  width: 100%; 
   display: block;
 }
 
