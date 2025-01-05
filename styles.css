@@ -138,7 +138,7 @@ a.cv-link:hover, a.about-link:hover, a.notes-link:hover,a:hover  {
 }
 
 #simulation-container {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   height: 20vh; 
   width: 80%; 
