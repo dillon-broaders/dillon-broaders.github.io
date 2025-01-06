@@ -69,7 +69,7 @@ const endPos2 = electron1.position.clone();
 
 scene.add(photon);
 
-let photonSpeed = 0.1;
+let photonSpeed = 0.14;
 let photonDirection1 = new THREE.Vector3().subVectors(endPos1, startPos1).normalize();
 let photonDirection2 = new THREE.Vector3().subVectors(endPos2, startPos2).normalize();
 let photonPosition = startPos1.clone();
