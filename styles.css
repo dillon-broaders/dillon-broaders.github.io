@@ -274,11 +274,6 @@ footer a i.fab.fa-linkedin {
     padding: 0;
   }
 
-  #simulation-container {
-    height: 25vh; 
-    width: 80%
-  }
-
   .nav-links a {
     font-size: 1.2rem;
     padding: 0.75rem 1rem; 
@@ -302,10 +297,6 @@ footer a i.fab.fa-linkedin {
   }
   .close-menu {
     display: none;
-  }
-
-  #simulation-container {
-    height: 35vh; 
   }
 
   .nav-links {
