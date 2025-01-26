@@ -20,32 +20,25 @@ body {
   justify-content: flex-start;  
   margin: 2vh 2vw;  
 }
+
 .nav-links {
   display: flex;
+  position: static; 
+  flex-direction: row;
   gap: 1rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-links a {
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
   color: white;
   text-decoration: none;
-  font-size: 1.2rem;
 }
 
-.hamburger {
-  display: block;  
-  font-size: 2rem;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-  z-index: 1100;
-}
-.hamburger:hover {
-  color:#0e76a8; 
-}
-
-.header.active .hamburger {
-  display: none;  
+.hamburger, .close-menu, .header.active .hamburger{
+  display: none;
 }
 
 h1 {
@@ -222,7 +215,7 @@ footer a i.fab.fa-linkedin {
   }
 
   .profile-image {
-    width: 50vw; 
+    width: 40vw; 
     margin:0 auto;
     margin-bottom: 0.5rem;
     order: 1; 
@@ -305,30 +298,6 @@ footer a i.fab.fa-linkedin {
   }
 }
 
-@media (min-width: 1001px) {
-  .hamburger {
-    display: none;
-  }
-  .close-menu {
-    display: none;
-  }
-
-  .nav-links {
-    display: flex;
-    position: static; 
-    flex-direction: row;
-    gap: 1rem;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .nav-links a {
-    padding: 0.5rem 1rem;
-    font-size: 1.2rem;
-    color: white;
-    text-decoration: none;
-  }
-}
 
 
 
