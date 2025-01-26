@@ -215,12 +215,14 @@ footer a i.fab.fa-linkedin {
   }
 
   .profile-image {
-    width: 40vw; 
+    width: 30vw; 
+    height: auto; 
     margin:0 auto;
     margin-bottom: 0.5rem;
     order: 1; 
     max-width: 100%; 
   }
+
 
   #simulation-container {
     margin: 0 auto;
