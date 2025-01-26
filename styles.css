@@ -140,7 +140,7 @@ footer a i.fab.fa-linkedin {
   color: inherit;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .header {
     flex-direction: row;
     align-items: center;
@@ -167,7 +167,7 @@ footer a i.fab.fa-linkedin {
 
   #simulation-container {
     margin: 0 auto;
-    max-width: 70%; 
+    max-width: 85%; 
     padding: 1rem;
     height: 10vh; 
     display: block;
