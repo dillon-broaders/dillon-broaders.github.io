@@ -18,50 +18,27 @@ body {
   display: flex;
   align-items: right;  
   justify-content: flex-start;  
-  margin: 2vh 2vw;  
 }
+
 .nav-links {
   display: flex;
+  position: static; 
+  flex-direction: row;
   gap: 1rem;
+  align-items: center;
+  justify-content: center;
 }
 
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-
-.hamburger {
-  display: block;  
-  font-size: 2rem;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-  z-index: 1100;
-}
-.hamburger:hover {
-  color:#0e76a8; 
-}
-
-.header.active .hamburger {
-  display: none;  
+.hamburger, .close-menu, .header.active .hamburger{
+  display: none;
 }
 
 h1 {
   font-family: 'Caveat', cursive;
   font-size: 1.5rem;  
   color: white;
-  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3), -3px -3px 2px rgba(0, 0, 0, 0.3);
-  letter-spacing: 1.5px;
-  line-height: 1.2;
   text-transform: none;
   padding: 1rem;
-}
-
-a {
-  color: white;
-  text-decoration: none;
 }
 
 a.logo-link {
@@ -69,7 +46,7 @@ a.logo-link {
   text-decoration: none;
   font-size: 1.5rem;  
   margin-left: 2.5vw;
-  margin-right: 67vw;
+  margin-right: 73vw;
 }
 a.logo-link:hover {
   text-decoration: none;
@@ -78,63 +55,27 @@ a.logo-link:hover {
 a.about-link {
   color: white;
   text-decoration: none;
-  font-size: 1.5rem;
-  line-height: 1.2;
-}
-a.about-link:hover {
-  text-decoration: none; 
-  color: white;
+  font-size: 1.3rem;
 }
 
-a.cv-link, a.notes-link {
-  color: white;
-  text-decoration: none;
-  font-size: 1.5rem;
-  margin-left: 1rem;
-}
-a.cv-link:hover, a.about-link:hover, a.notes-link:hover,a:hover  {
+a.about-link:hover,a:hover  {
   text-decoration: none;
   color: #4169E1;
 }
 
 .welcome-container{
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin-top: 10vh; 
-  max-width: 50%;  
+  max-width: 85%;  
   margin: 0 auto;
-  line-height: 1.6;
   margin-bottom: 1vh; 
 }
 
-.pdf-container {
-  font-family: Arial, sans-serif;
-  max-width: 40%;
-  line-height: 1.6;
-  margin: 25vh auto 1vh auto; 
-  padding: 20px;
-  border: 2px solid #fff; 
-  border-radius: 8px;
-  transition: background-color 0.3s ease, border-color 0.3s ease; 
-  color: white;
-}
-
-.pdf-container:hover {
-  background-color: #4169E1; 
-  border-color: #4169E1; 
-  color: white; 
-}
-
-.pdf-container a:hover {
-  color: white; 
-}
 .welcome-container h2 {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
   color: white;
-  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3), -3px -3px 2px rgba(0, 0, 0, 0.3);
-  letter-spacing: 2px;
-  margin: 0;
-  font-size: 1.3rem;
-  padding-top: 3vh;
+  padding-top: 5vh;
 }
 
 #simulation-container {
@@ -146,10 +87,10 @@ a.cv-link:hover, a.about-link:hover, a.notes-link:hover,a:hover  {
 }
 
 .about-container {
-  font-family: Arial, sans-serif;
-  max-width: 80%; 
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  max-width: 85%; 
   margin: 0 auto;
-  line-height: 1.6;
   padding: 2rem;  
   padding-bottom: 2.5vh; 
   text-align: left; 
@@ -157,7 +98,7 @@ a.cv-link:hover, a.about-link:hover, a.notes-link:hover,a:hover  {
 
 .about-container h2 {
   text-align: left;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   margin-top: 0;
   margin-bottom: 2rem;
   padding-top: 0; 
@@ -214,15 +155,9 @@ footer a i.fab.fa-linkedin {
     margin-right: 1rem;
   }
 
-  a.about-link,
-  a.notes-link,
-  a.blog-link {
-    font-size: 1.2rem;  
-    margin-left: 0;
-  }
-
   .profile-image {
-    width: 50vw; 
+    width: 30vw; 
+    height: auto; 
     margin:0 auto;
     margin-bottom: 0.5rem;
     order: 1; 
@@ -231,15 +166,14 @@ footer a i.fab.fa-linkedin {
 
   #simulation-container {
     margin: 0 auto;
-    max-width: 70%; 
+    max-width: 85%; 
     padding: 1rem;
     height: 10vh; 
     display: block;
   }
   
   .welcome-container{
-    max-width: 70%;  
-  
+    max-width: 85%;  
   }
 
   .about-container {
@@ -300,35 +234,8 @@ footer a i.fab.fa-linkedin {
     display: flex;
   }
 
-  footer a {
-    font-size: 2rem; 
-  }
 }
 
-@media (min-width: 1001px) {
-  .hamburger {
-    display: none;
-  }
-  .close-menu {
-    display: none;
-  }
-
-  .nav-links {
-    display: flex;
-    position: static; 
-    flex-direction: row;
-    gap: 1rem;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .nav-links a {
-    padding: 0.5rem 1rem;
-    font-size: 1.2rem;
-    color: white;
-    text-decoration: none;
-  }
-}
 
 
 
